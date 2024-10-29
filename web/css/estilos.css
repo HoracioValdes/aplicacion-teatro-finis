@@ -1,0 +1,245 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12-09-2022, 12:00:02
+    Author     : horac
+*/
+
+/**h1 {
+    color: red;
+}**/
+
+h1,
+h2{
+    font-family: 'Lato', sans-serif;
+}
+p,
+button{
+    font-family: "Raleway", sans-serif;
+}
+header{
+    background-color: #E30062;
+    color: #ffffff;
+    width: 100%;
+    /*height: 140px;*/
+    height: 130px;
+}
+#caja-header {
+    display: flex;
+    align-items: center;
+}
+#logo{
+    width: 60%;
+    height: auto;
+    padding: 5px;
+}
+#titulo-pagina {
+    padding-left: 10%;
+}
+footer{
+    background-color: #E30062;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    width: 100%;
+    /**position: absolute;
+    bottom: 0;**/
+    margin-top: auto;
+}
+#gratuidad{
+    width: 10%;
+    height: auto;
+    margin-right: -15%;
+    display: none;
+}
+#acreditada{
+    width: 15%;
+    height: auto;
+    margin-right: -1%;
+    
+}
+#direccion{
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 12px;
+    margin-left: -4%;
+}
+.btn.btn-primary {
+    /*background-color: #926f4d;*/
+    background-color: #000000;
+    outline: none;
+    box-shadow: none;
+    /*border: #926f4d 5px solid;*/
+    border: #000000 5px solid;
+}
+.btn.btn-primary:hover {
+    background-color: #E30062;
+    outline: none;
+    box-shadow: none;
+    border: #E30062 5px solid;
+}
+
+/** Vista mobile**/
+@media only screen and (max-width: 1000px) {
+    header{
+        height: 800px;
+        display: flex;
+        justify-content: center;
+    }
+    #caja-header {
+        justify-content: center;
+    }
+    #logo{
+        width: 550px;
+        height: auto;
+        margin-left: -200px;
+        margin-top: 20px;
+    }
+    #caja-titulo {
+        margin-top: 100px;
+        display: flex;
+        text-align: center;
+    }
+    #titulo-pagina {
+        font-size: 80px !important;
+        padding-left: 0;
+    }
+    #gratuidad{
+        width: 30%;
+        margin-top: 60px;
+        display: none;
+    }
+    #acreditada{
+        width: 40%;
+        margin-top: 60px;
+    }
+    footer{
+        height: 350px;
+        position: relative;
+    }
+    #direccion{
+        position: absolute;
+        text-align: center;
+        margin-top: -200px;
+        font-size: 30px;
+    }
+    #titulo-instrucciones {
+        font-size: 80px;
+        margin-left: -50px;
+    }
+    p {
+        font-size: 30px;
+    }
+    #caja-formulario {
+        width: 700px;
+    }
+    #caja-formulario p {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    #caja-botones {
+        width: 700px;
+        margin-left: 0;
+    }
+    #caja-botones p {
+        font-size: 40px;
+    }
+    label {
+        font-size: 35px;
+    }
+    input {
+        font-size: 40px !important;
+    }
+    #caja-contenido {
+        display: flex;
+        justify-content: center;
+    }
+    #ayudaRut {
+        font-size: 25px;
+    }
+    .form-text {
+        font-size: 35px !important;
+    }
+    button {
+        font-size: 40px !important;
+        padding: 10px 25px !important;
+    }
+    #caja-botones {
+        margin-top: 80px;
+    }
+    main {
+        margin-bottom: 100px;
+    }
+    #tabla-resultados thead tr th,
+    #tabla-resultados tbody tr td {
+        font-size: 30px;
+    }
+    #caja-resultados {
+        width: 700px;
+    }
+    #caja-resultados h1 {
+        margin-bottom: 50px;
+    }
+    #caja-resultados h3 {
+        font-size: 40px;
+    }
+    #texto-resultados,
+    #tabla-resultados,
+    #boton-resultado {
+        font-size: 40px !important;
+        padding: 10px 25px !important;
+        width: 200px !important;
+    }
+    #rc-imageselect, .g-recaptcha {
+        display: inline;
+    }
+    #rc-imageselect{
+        max-width: 100%;
+    }
+    .g-recaptcha>div>div{
+        width: 100% !important;
+        height: 78px;
+        transform:scale(2);
+        transform-origin: 0 0;
+        text-align: center;
+        position: relative;
+    }
+    #boton-generar-codigo {
+        margin-top: 100px !important;
+    }
+    #campoCodigo {
+        margin-bottom: 50px;
+    }
+    #boton-ingreso {
+        margin-top: 100px !important;
+    }
+    #acceso-denegado {
+        margin-top: 50px !important;
+    }
+    #acceso-denegado div h3 {
+        font-size: 50px !important;
+        margin-bottom: 30px;
+    }
+    #acceso-denegado div p {
+        font-size: 40px;
+    }
+    #acceso-denegado div a {
+        font-size: 40px !important;
+        padding: 10px 25px !important;
+        margin-top: 30px;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#mensaje_codigo {
+    color: red;
+}
+

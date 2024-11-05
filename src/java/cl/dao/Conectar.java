@@ -23,9 +23,9 @@ public class Conectar {
         //Conexión en productivo
         //return DriverManager.getConnection("jdbc:mysql://192.168.5.128:3306/resultados_paes?useSSL=false&useTimezone=true&serverTimezone=UTC","paes","nNbeIN.7bWaMY");
         //Conexión en localhost
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/resultados_teatro?useSSL=false&useTimezone=true&serverTimezone=UTC","root","admin");
+        //return DriverManager.getConnection("jdbc:mysql://localhost:3306/resultados_teatro?useSSL=false&useTimezone=true&serverTimezone=UTC","root","admin");
         //Conexión en ambiente de desarrollo
-        //return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/resultados_teatro?useSSL=false&useTimezone=true&serverTimezone=UTC","root","WebUft.,2015");
+        return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/resultados_teatro?useSSL=false&useTimezone=true&serverTimezone=UTC","root","WebUft.,2015");
     }
     
     public void Desconectar(Connection cn){
